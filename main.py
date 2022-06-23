@@ -1,5 +1,6 @@
 import os
 from random import choice
+SYMBOLS = ['X','O']
 
 def validarOpcion():
 
@@ -8,8 +9,7 @@ def validarOpcion():
         opcion = input("ERROR!! Ingrese una opcion valida")
     return opcion
 
-def printTable():
-    space = []
+def printTable(space):
     print(f'''
         {space[0]} | {space[1]} | {space[2]}
         ------------------------------------
@@ -19,9 +19,16 @@ def printTable():
         ''')
 
 def playComputer():
-    symbols = ['X','O']
-    random_choice = choice(symbols)
+    random_choice = choice(SYMBOLS)
+    space = [" "," "," "," "," "," "," "," "," "]
+    while(space[] != " ")
+    printTable(space)
+    fila = input("Ingrese fila: ")
+    columna = input("Ingrese columna")
     
+    
+def playPlayer_2():
+    pass
 
 def printMenu():
     print('''
