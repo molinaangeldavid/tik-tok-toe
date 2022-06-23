@@ -20,11 +20,18 @@ def printTable(space):
 
 def playComputer():
     random_choice = choice(SYMBOLS)
-    space = [" "," "," "," "," "," "," "," "," "]
-    while(space[] != " ")
-    printTable(space)
-    fila = input("Ingrese fila: ")
-    columna = input("Ingrese columna")
+    space = [[" "," "," "],
+            [" "," "," "],
+            [" "," "," "]]
+    estado = True
+    while(estado):
+        printTable(space)
+        print("Fila")
+        fila = validarOpcion()
+        print("Columna")
+        columna = validarOpcion()
+        space[fila]
+        
     
     
 def playPlayer_2():
