@@ -1,6 +1,6 @@
 import os
-from random import choice
-SYMBOLS = ['X','O']
+from random import choice,randint
+# SYMBOLS = ['X','O']
 
 def validarOpcion():
 
@@ -18,8 +18,12 @@ def printTable(space):
         {space[6]} | {space[7]} | {space[8]}
         ''')
 
+def validarGameTriline(table):
+    for x in table:
+        for col in x:
+            if (x == col)
+
 def playComputer():
-    random_choice = choice(SYMBOLS)
     space = [[" "," "," "],
             [" "," "," "],
             [" "," "," "]]
@@ -30,7 +34,19 @@ def playComputer():
         fila = validarOpcion()
         print("Columna")
         columna = validarOpcion()
-        space[fila]
+        while not (space[fila-1][columna-1] == " "):    
+            print("ERROR")
+            fila = validarOpcion()
+            print("Columna")
+            columna = validarOpcion()
+        space[fila-1][columna-1] = "X"
+        
+        random_choice = randint(0,8)
+        fila = random_choice
+        columna = random_choice
+        while not (space[fila-1][columna-1] == " "):
+            fila = random_choice
+            columna = random_choice
         
     
     
